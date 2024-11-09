@@ -9,9 +9,9 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <h1>Keegan Atchison</h1>
+            <h1><a href="index.html">Keegan Atchison</a></h1>
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li><a href="work.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -20,33 +20,39 @@
         </div>
 
         <main class="content">
-            <section class="projects">
-                <h2>My Projects</h2>
+            <!-- 3D Printing Section -->
+            <section class="project" onclick="location.href='3dprinting.html';" style="cursor: pointer;">
+                <img src="images/3dprint.heic" alt="3D Printing" />
+                <h3 style="font-weight: bold;">3D Printing, WASP and NYU</h3>
+                <p>Experiments with geopolymers, ceramics, earthen materials, and biomatter utilizing computational design for sustainable construction and art.</p>
+            </section>
 
-                <!-- Geopolymer Concrete -->
-                <div class="category">
-                    <h3>Geopolymer Concrete</h3>
-                    <a href="geopolymer.html">
-                        <img src="images/geopolymer.jpg" alt="Geopolymer Concrete" />
-                    </a>
-                </div>
+            <!-- Geopolymer Concrete Section -->
+            <section class="project" onclick="location.href='geopolymer.html';" style="cursor: pointer;">
+                <img src="images/geopolymer.heic" alt="Geopolymer Concrete" />
+                <h3 style="font-weight: bold;">Geopolymer Concrete, WASP</h3>
+                <p>Project to develop novel geopolymer material for 3D printing. Work presented at TU/e’s Drivers of Change at the Dutch Design Week 2024.</p>
+            </section>
 
-                <!-- Hydrogen Evolution Reaction Electrocatalyst -->
-                <div class="category">
-                    <h3>Hydrogen Evolution Reaction Electrocatalyst</h3>
-                    <a href="hydrogen.html">
-                        <img src="images/hydrogen.jpg" alt="Hydrogen Evolution Reaction Electrocatalyst" />
-                    </a>
-                </div>
+            <!-- Electrocatalyst Section -->
+            <section class="project" onclick="location.href='hydrogen.html';" style="cursor: pointer;">
+                <img src="images/hydrogen.heic" alt="Electrocatalyst" />
+                <h3 style="font-weight: bold;">Electrocatalyst, NYU Transformative Materials Lab</h3>
+                <p>Project to create cost-effective electrocatalysts for hydrogen evolution reaction.</p>
+            </section>
 
-                <!-- 3D Printing -->
-                <div class="category">
-                    <h3>3D Printing</h3>
-                    <a href="3dprinting.html">
-                        <img src="images/3dprinting.jpg" alt="3D Printing" />
-                    </a>
-                </div>
+            <!-- Art and Textiles Section -->
+            <section class="project" onclick="location.href='artandtextiles.html';" style="cursor: pointer;">
+                <img src="images/art.heic" alt="Art and Textiles" />
+                <h3 style="font-weight: bold;">Art and Textiles</h3>
+                <p>Details about my personal art and design projects.</p>
+            </section>
 
+            <!-- Non-profit Section -->
+            <section class="project" onclick="location.href='nonprofit.html';" style="cursor: pointer;">
+                <img src="images/nonp.heic" alt="Non-profit Work" />
+                <h3 style="font-weight: bold;">Non-profit</h3>
+                <p>Information on my work with Prison Scholar Fund and North Cascades.</p>
             </section>
 
             <footer>
@@ -55,4 +61,4 @@
         </main> 
     </div> 
 </body>
-</html> 
+</html>
