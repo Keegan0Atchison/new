@@ -3,62 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work - Keegan Atchison</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Keegan Atchison - Work</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Sans Beam Body-Book';
+            src: url('fonts/SansBeamBody-Book.woff2') format('woff2'); /* Update the path to your font file */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+            color: rgb(0, 0, 0);
+            display: flex;
+            height: 100vh;
+        }
+
+        .container {
+            width: 30%;
+            padding: 20px;
+            margin-bottom: 25vh; /* Adjust margin to position the container */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .content {
+            width: 70%;
+            padding: 20px;
+            background-color: white; /* Set background color to white */
+            color: black; /* Set text color to black for readability */
+            overflow-y: auto; /* Add scroll if content overflows */
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: rgb(47, 46, 46); /* Set link color to light grey */
+        }
+
+        .images-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .images-row img {
+            width: 48.33%; /* Each image occupies one-third of the right two-thirds section */
+            height: auto;
+        }
+
+        .text-content {
+            max-width: 100%; /* Ensure the text content is the same width as the images */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="sidebar">
-            <h1><a href="index.html">Keegan Atchison</a></h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="work.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+        <h1><a href="index.html" style="text-decoration: none; color: rgb(66, 66, 66);">Keegan Atchison</a></h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="work.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="text-content">
+            <a href="3Dprinting.html" style="text-decoration: none; color: black;">
+                <h2>3D Printing</h2>
+        <div class="images-row">
+            <a href="3Dprinting.html">
+                <img src="images/image10.jpg" alt="Image 10">
+                <img src="images/image14.jpg" alt="Image 14">
+        </div>
+            </a>
+                Experiments with ceramics, geopolymers, earthen materials, and biomatter utilizing computational design for sustainable construction and art.</p>
+            </a>
         </div>
 
-        <main class="content">
-            <!-- 3D Printing Section -->
-            <section class="project" onclick="location.href='3dprinting.html';" style="cursor: pointer;">
-                <img src="images/3dprint.heic" alt="3D Printing" />
-                <h3 style="font-weight: bold;">3D Printing, WASP and NYU</h3>
-                <p>Experiments with geopolymers, ceramics, earthen materials, and biomatter utilizing computational design for sustainable construction and art.</p>
-            </section>
-
-            <!-- Geopolymer Concrete Section -->
-            <section class="project" onclick="location.href='geopolymer.html';" style="cursor: pointer;">
-                <img src="images/geopolymer.heic" alt="Geopolymer Concrete" />
-                <h3 style="font-weight: bold;">Geopolymer Concrete, WASP</h3>
-                <p>Project to develop novel geopolymer material for 3D printing. Work presented at TU/e’s Drivers of Change at the Dutch Design Week 2024.</p>
-            </section>
-
-            <!-- Electrocatalyst Section -->
-            <section class="project" onclick="location.href='hydrogen.html';" style="cursor: pointer;">
-                <img src="images/hydrogen.heic" alt="Electrocatalyst" />
-                <h3 style="font-weight: bold;">Electrocatalyst, NYU Transformative Materials Lab</h3>
-                <p>Project to create cost-effective electrocatalysts for hydrogen evolution reaction.</p>
-            </section>
-
-            <!-- Art and Textiles Section -->
-            <section class="project" onclick="location.href='artandtextiles.html';" style="cursor: pointer;">
-                <img src="images/art.heic" alt="Art and Textiles" />
-                <h3 style="font-weight: bold;">Art and Textiles</h3>
-                <p>Details about my personal art and design projects.</p>
-            </section>
-
-            <!-- Non-profit Section -->
-            <section class="project" onclick="location.href='nonprofit.html';" style="cursor: pointer;">
-                <img src="images/nonp.heic" alt="Non-profit Work" />
-                <h3 style="font-weight: bold;">Non-profit</h3>
-                <p>Information on my work with Prison Scholar Fund and North Cascades.</p>
-            </section>
-
-            <footer>
-                <p>&copy; 2024 Keegan Atchison | All Rights Reserved</p> 
-            </footer> 
-        </main> 
-    </div> 
+        <div class="text-content">
+            <a href="geopolymer.html" style="text-decoration: none; color: black;">
+                <h2>Geopolymer Concrete</h2>
+        <div class="images-row">
+            <a href="geopolymer.html">
+                <img src="images/image16.jpg" alt="Image 16">
+                <img src="images/image15.jpg" alt="Image 15">
+        </div>
+            </a>
+                Project to develop novel geopolymer material for 3D printing. Work presented at TU/e’s Drivers of Change at the Dutch Design Week 2024.</p>
+            </a>
+        
+        <div class="text-content">
+            <a href="hydrogen.html" style="text-decoration: none; color: black;">
+                <h2>Electrocatalyst, NYU TMD Lab</h2>
+        <div class="images-row">
+            <a href="hydrogen.html">
+                <img src="images/image17.jpg" alt="Image 10">
+                <img src="images/image18.jpg" alt="Image 14">
+        </div>
+            </a>
+            Project to create cost-effective electrocatalysts for hydrogen evolution reaction.</p>
+            </a>
+        
+        <div class="text-content">
+            <a href="art.html" style="text-decoration: none; color: black;">
+                <h2>Textiles</h2>
+        <div class="images-row">
+            <a href="art.html">
+                <img src="images/image19.jpg" alt="Image 10">
+                <img src="images/image33.jpeg" alt="Image 14">
+        </div>
+            </a>
+            Details about my personal art and design projects.            
+            </a>
+            
+            <p>© 2024 Keegan Atchison | Website Developed by Keegan Atchison | All Rights Reserved</p>
+        </div>
+    </div>
 </body>
 </html>
