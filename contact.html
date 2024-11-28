@@ -11,49 +11,50 @@
             font-family: 'Sans Beam Body-Book';
             src: url('fonts/SansBeamBody-Book.woff2') format('woff2'); /* Update the path to your font file */
         }
+
         body {
-            font-family: 'Open Sans', sans-serif;
-            color: rgb(0, 0, 0);
             margin: 0;
             padding: 0;
-            background-image: url('images/image35.jpg'); /* Ensure correct path */
+            font-family: 'Open Sans', sans-serif;
+            color: lightgrey; /* Set font color to light grey */
+            display: flex;
+            height: 100vh;
+            background-image: url('images/image35.jpg'); /* Set the background image */
             background-size: cover;
             background-position: center;
-            overflow: hidden;
-            position: relative; /* Ensure body is positioned */
+            overflow: hidden; /* Remove scroll feature */
         }
 
         .container {
-            width: 30%;
+            width: 33.33%;
             padding: 20px;
-            margin-bottom: 25vh;
+            margin-bottom: 25vh; /* Adjust margin to position the container */
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            z-index: 1; /* Ensure container is above background */
         }
-        
+
         .content {
-            width: 70%;
+            width: 66.67%;
             padding: 20px;
-            justify-content: center;
-            align-items: flex-start;
+            color: lightgrey; /* Set text color to light grey for readability */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Vertically center the content */
+            align-items: flex-start; /* Align items to the start */
             position: absolute;
             top: 0;
             right: 0;
-            height: 100vh;
-            background-color: rgba(255, 255, 255, 0.8); /* Optional: Add background color to make text readable */
-            z-index: 2; /* Ensure content is above container */
+            height: 100vh; /* Ensure the content takes up the full height */
         }
-        
+
         .footer {
             width: 100%;
             padding: 10px;
             text-align: center;
             position: absolute;
             bottom: 0;
-            color: lightgrey;
-            z-index: 2; /* Ensure footer is above container */
+            color: lightgrey; /* Set text color to light grey */
         }
 
         h1 {
